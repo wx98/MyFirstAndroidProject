@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这里使用了ScollView"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LinearLayout"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_RelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_LinearLayout"
+                android:layout_marginTop="5dp"
+                android:text="RelativeLayout"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_RelativeLayout"
+                android:layout_marginTop="5dp"
+                android:text="TextView"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_TextView"
+                android:layout_marginTop="5dp"
+                android:text="Button"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_Button"
+                android:layout_marginTop="5dp"
+                android:text="EditText"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_EditText"
+                android:layout_marginTop="5dp"
+                android:text="RadioButton"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_CheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_RadioButton"
+                android:layout_marginTop="5dp"
+                android:text="CheckBox"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_ImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_CheckBox"
+                android:layout_marginTop="5dp"
+                android:text="ImageView"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_ListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_ImageView"
+                android:layout_marginTop="5dp"
+                android:text="ListView"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_GridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_ListView"
+                android:layout_marginTop="5dp"
+                android:text="GridView"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_GridView"
+                android:layout_marginTop="5dp"
+                android:text="RecyclerView"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_WebView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_RecyclerView"
+                android:layout_marginTop="5dp"
+                android:text="WebView"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_Toast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_WebView"
+                android:layout_marginTop="5dp"
+                android:text="Toast"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_AlertDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_Toast"
+                android:layout_marginTop="5dp"
+                android:text="AlertDialog"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btn_CusetomDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_AlertDialog"
+                android:layout_marginTop="5dp"
+                android:text="CusetomDialog"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_CusetomDialog"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:text="这里使用了HorizontalScrollView"
+                android:textSize="20dp" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text2"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TestBtn"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TestBtn"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TestBtn"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TestBtn"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TestBtn"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TestBtn"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TestBtn"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TestBtn"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TestBtn"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TestBtn"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TestBtn"
+                        android:textAllCaps="false" />
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

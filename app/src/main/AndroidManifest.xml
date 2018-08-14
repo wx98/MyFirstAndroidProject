@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.wxxwwx98.testone">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 添加网络权限 -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".RelativelayoutActivity" />
+        <activity android:name=".LinearlayoutActivity" />
+        <activity android:name=".TextviewActivity" />
+        <activity android:name=".ButtonActivity" />
+        <activity android:name=".EdittextActivity" />
+        <activity android:name=".RadiobuttonActivity" />
+        <activity android:name=".CheckboxActivity" />
+        <activity android:name=".ImageviewActivity" />
+        <activity android:name=".listview.ListViewActivity" />
+        <activity android:name=".gridvew.GridViewActivity" />
+        <activity android:name=".recyclerview.RecyclerViewActivity" />
+        <activity android:name=".recyclerview.LinerRecycleViewActivity" />
+        <activity android:name=".recyclerview.HorRecyclerViewActivity" />
+        <activity android:name=".recyclerview.GridRecyclerViewActivity" />
+        <activity android:name=".recyclerview.PurRecyclerViewActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".ToastActivity" />
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".CusetomDialogActivity"></activity>
+    </application>
+
+</manifest>
