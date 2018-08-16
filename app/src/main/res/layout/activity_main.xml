@@ -154,12 +154,20 @@
                 android:layout_marginTop="5dp"
                 android:text="CusetomDialog"
                 android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btn_PopupWindow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_CusetomDialog"
+                android:layout_marginTop="5dp"
+                android:text="PopupWindow"
+                android:textAllCaps="false" />
 
             <TextView
                 android:id="@+id/text2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/btn_CusetomDialog"
+                android:layout_below="@+id/btn_PopupWindow"
                 android:layout_marginTop="50dp"
                 android:gravity="center_horizontal"
                 android:text="这里使用了HorizontalScrollView"

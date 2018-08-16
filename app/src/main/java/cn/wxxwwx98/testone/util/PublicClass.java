@@ -52,6 +52,7 @@ public class PublicClass extends  AppCompatActivity{
     Display d = m.getDefaultDisplay();
     WindowManager.LayoutParams p = getWindow().getAttributes();
     Point size = new Point();
+    //2323
 //    d.getSize(size);
 //    p.width = (int) (size.x *0.8);
 //    getWindow().setAttributes(p);
