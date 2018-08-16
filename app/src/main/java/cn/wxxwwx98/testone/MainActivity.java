@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import cn.wxxwwx98.testone.gridvew.GridViewActivity;
+import cn.wxxwwx98.testone.jump.AActivity;
 import cn.wxxwwx98.testone.listview.ListViewActivity;
 import cn.wxxwwx98.testone.recyclerview.RecyclerViewActivity;
 import cn.wxxwwx98.testone.util.PublicClass;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private  Button btn1,btn2,btn3,btn4,btn5,
                     btn6,btn7,btn8,btn9,btn10,
                     btn11,btn12,btn13,btn14,btn15,
-                    btn16;
+                    btn16,btn17,btn18;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         btn14 = findViewById(R.id.btn_AlertDialog);
         btn15 = findViewById(R.id.btn_CusetomDialog);
         btn16 = findViewById(R.id.btn_PopupWindow);
+        btn17 = findViewById(R.id.btn_LifeCycleActivity);
+        btn18 = findViewById(R.id.btn_JumpActivity);
         setListeners();
 
     }
@@ -61,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         btn14.setOnClickListener(onClick);
         btn15.setOnClickListener(onClick);
         btn16.setOnClickListener(onClick);
+        btn17.setOnClickListener(onClick);
+        btn18.setOnClickListener(onClick);
     }
     private class onClick implements View.OnClickListener{
         @Override
@@ -130,6 +135,14 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_PopupWindow:
                     intent = new Intent(MainActivity.this,PopupWindowActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btn_LifeCycleActivity:
+                    intent = new Intent(MainActivity.this,LifeCycleActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btn_JumpActivity:
+                    intent = new Intent(MainActivity.this,AActivity.class);
                     startActivity(intent);
                     break;
             }

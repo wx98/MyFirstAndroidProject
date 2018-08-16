@@ -162,16 +162,33 @@
                 android:layout_marginTop="5dp"
                 android:text="PopupWindow"
                 android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btn_LifeCycleActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_PopupWindow"
+                android:layout_marginTop="5dp"
+                android:text="LifeCycleActivity"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btn_JumpActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_LifeCycleActivity"
+                android:layout_marginTop="5dp"
+                android:text="JumpActivity"
+                android:textAllCaps="false" />
 
             <TextView
                 android:id="@+id/text2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/btn_PopupWindow"
+                android:layout_below="@+id/btn_JumpActivity"
                 android:layout_marginTop="50dp"
                 android:gravity="center_horizontal"
                 android:text="这里使用了HorizontalScrollView"
                 android:textSize="20dp" />
+
 
             <HorizontalScrollView
                 android:layout_width="wrap_content"
