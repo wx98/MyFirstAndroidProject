@@ -10,6 +10,7 @@ import cn.wxxwwx98.testone.gridvew.GridViewActivity;
 import cn.wxxwwx98.testone.jump.AActivity;
 import cn.wxxwwx98.testone.listview.ListViewActivity;
 import cn.wxxwwx98.testone.recyclerview.RecyclerViewActivity;
+import cn.wxxwwx98.testone.single.oneActivity;
 import cn.wxxwwx98.testone.util.PublicClass;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,12 +18,12 @@ public class MainActivity extends AppCompatActivity {
     private  Button btn1,btn2,btn3,btn4,btn5,
                     btn6,btn7,btn8,btn9,btn10,
                     btn11,btn12,btn13,btn14,btn15,
-                    btn16,btn17,btn18;
+                    btn16,btn17,btn18,btn19;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
 
         btn1 =  findViewById(R.id.btn_LinearLayout);
         btn2 =  findViewById(R.id.btn_RelativeLayout);
@@ -42,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         btn16 = findViewById(R.id.btn_PopupWindow);
         btn17 = findViewById(R.id.btn_LifeCycleActivity);
         btn18 = findViewById(R.id.btn_JumpActivity);
+        btn19 = findViewById(R.id.btn_LaunchMode);
         setListeners();
 
     }
@@ -66,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         btn16.setOnClickListener(onClick);
         btn17.setOnClickListener(onClick);
         btn18.setOnClickListener(onClick);
+        btn19.setOnClickListener(onClick);
     }
     private class onClick implements View.OnClickListener{
         @Override
@@ -143,6 +146,10 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_JumpActivity:
                     intent = new Intent(MainActivity.this,AActivity.class);
+                    startActivity(intent);
+                    break;
+                case R.id.btn_LaunchMode:
+                    intent = new Intent(MainActivity.this,oneActivity.class);
                     startActivity(intent);
                     break;
             }

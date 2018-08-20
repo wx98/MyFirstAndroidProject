@@ -14,14 +14,14 @@ public class LifeCycleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_life_cycle);
         Log.d("LifeCycle", "---1onCreate--- ");
-        Toast.makeText(LifeCycleActivity.this,"onCreate.....",Toast.LENGTH_LONG).show();
+        Toast.makeText(LifeCycleActivity.this,"运行了onCreate.....",Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
         Log.d("LifeCycle", "---onStart--- ");
-        Toast.makeText(LifeCycleActivity.this,"onStart.....",Toast.LENGTH_LONG).show();
+        Toast.makeText(LifeCycleActivity.this,"运行了onStart.....",Toast.LENGTH_SHORT).show();
         //
     }
 
@@ -30,7 +30,7 @@ public class LifeCycleActivity extends AppCompatActivity {
         super.onResume();
         Log.d("LifeCycle", "---onResume--- ");
         //每次进入时执行
-        Toast.makeText(LifeCycleActivity.this,"onResume.....",Toast.LENGTH_LONG).show();
+        Toast.makeText(LifeCycleActivity.this,"运行了onResume.....",Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -38,7 +38,7 @@ public class LifeCycleActivity extends AppCompatActivity {
         super.onPause();
         Log.d("LifeCycle", "---onPause--- ");
         //后台时执行
-        Toast.makeText(LifeCycleActivity.this,"onPause.....",Toast.LENGTH_LONG).show();
+        Toast.makeText(LifeCycleActivity.this,"运行了onPause.....",Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -46,14 +46,14 @@ public class LifeCycleActivity extends AppCompatActivity {
         super.onStop();
         Log.d("LifeCycle", "---onStop--- ");
         //后台时执行
-        Toast.makeText(LifeCycleActivity.this,"onStop.....",Toast.LENGTH_LONG).show();
+        Toast.makeText(LifeCycleActivity.this,"运行了onStop.....",Toast.LENGTH_SHORT).show();
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
         Log.d("LifeCycle", "---onRestart--- ");
-        Toast.makeText(LifeCycleActivity.this,"onRestart.....",Toast.LENGTH_LONG).show();
+        Toast.makeText(LifeCycleActivity.this,"运行了onRestart.....",Toast.LENGTH_SHORT).show();
     }
 
     @Override
@@ -61,6 +61,6 @@ public class LifeCycleActivity extends AppCompatActivity {
         super.onDestroy();
         Log.d("LifeCycle", "---onDestroy--- ");
         //页面摧毁之前执行
-        Toast.makeText(LifeCycleActivity.this,"onDestroy.....",Toast.LENGTH_LONG).show();
+        Toast.makeText(LifeCycleActivity.this,"运行了onDestroy.....",Toast.LENGTH_SHORT).show();
     }
 }

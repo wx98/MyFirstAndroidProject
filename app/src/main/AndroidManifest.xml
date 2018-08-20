@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.wxxwwx98.testone">
+
     <!-- 添加网络权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -39,16 +40,23 @@
         <activity android:name=".DialogActivity" />
         <activity android:name=".CusetomDialogActivity" />
         <activity android:name=".PopupWindowActivity" />
-        <activity android:name=".LifeCycleActivity"/>
-        <activity android:name=".jump.AActivity" android:label="A"/>
-        <activity android:name=".jump.BActivity" android:label="B">
+        <activity android:name=".LifeCycleActivity" />
+        <activity
+            android:name=".jump.AActivity"
+            android:label="A" />
+        <activity
+            android:name=".jump.BActivity"
+            android:label="B">
             <intent-filter>
                 <action android:name="cn.wxxwwx98.testone.jump.textBActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".jump.CActivity" android:label="C"/>
+        <activity
+            android:name=".jump.CActivity"
+            android:label="C" />
+        <activity android:name=".single.oneActivity" android:label="one"/>
+        <activity android:name=".single.twoActivity" android:label="two"/>
     </application>
-
 </manifest>

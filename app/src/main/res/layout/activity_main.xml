@@ -146,6 +146,7 @@
                 android:layout_marginTop="5dp"
                 android:text="AlertDialog"
                 android:textAllCaps="false" />
+
             <Button
                 android:id="@+id/btn_CusetomDialog"
                 android:layout_width="match_parent"
@@ -154,6 +155,7 @@
                 android:layout_marginTop="5dp"
                 android:text="CusetomDialog"
                 android:textAllCaps="false" />
+
             <Button
                 android:id="@+id/btn_PopupWindow"
                 android:layout_width="match_parent"
@@ -162,6 +164,7 @@
                 android:layout_marginTop="5dp"
                 android:text="PopupWindow"
                 android:textAllCaps="false" />
+
             <Button
                 android:id="@+id/btn_LifeCycleActivity"
                 android:layout_width="match_parent"
@@ -170,6 +173,7 @@
                 android:layout_marginTop="5dp"
                 android:text="LifeCycleActivity"
                 android:textAllCaps="false" />
+
             <Button
                 android:id="@+id/btn_JumpActivity"
                 android:layout_width="match_parent"
@@ -179,11 +183,20 @@
                 android:text="JumpActivity"
                 android:textAllCaps="false" />
 
+            <Button
+                android:id="@+id/btn_LaunchMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btn_JumpActivity"
+                android:layout_marginTop="5dp"
+                android:text="启动模式的演示LaunchMode"
+                android:textAllCaps="false" />
+
             <TextView
                 android:id="@+id/text2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/btn_JumpActivity"
+                android:layout_below="@+id/btn_LaunchMode"
                 android:layout_marginTop="50dp"
                 android:gravity="center_horizontal"
                 android:text="这里使用了HorizontalScrollView"
