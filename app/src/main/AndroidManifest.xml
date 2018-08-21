@@ -56,7 +56,14 @@
         <activity
             android:name=".jump.CActivity"
             android:label="C" />
-        <activity android:name=".single.oneActivity" android:label="one"/>
-        <activity android:name=".single.twoActivity" android:label="two"/>
+        <activity
+            android:name=".single.oneActivity"
+            android:label="one" />
+        <activity
+            android:name=".single.twoActivity"
+            android:label="two" />
+        <activity android:name=".fragment.ContainerActivity"
+            android:label="一个用于测试Fragment的界面"/>
     </application>
+
 </manifest>

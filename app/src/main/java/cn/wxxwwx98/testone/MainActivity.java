@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import cn.wxxwwx98.testone.fragment.ContainerActivity;
 import cn.wxxwwx98.testone.gridvew.GridViewActivity;
 import cn.wxxwwx98.testone.jump.AActivity;
 import cn.wxxwwx98.testone.listview.ListViewActivity;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //getSupportActionBar().hide();
+        getSupportActionBar().hide();
 
         btn1 =  findViewById(R.id.btn_LinearLayout);
         btn2 =  findViewById(R.id.btn_RelativeLayout);
@@ -43,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         btn16 = findViewById(R.id.btn_PopupWindow);
         btn17 = findViewById(R.id.btn_LifeCycleActivity);
         btn18 = findViewById(R.id.btn_JumpActivity);
-        btn19 = findViewById(R.id.btn_LaunchMode);
+        btn19 = findViewById(R.id.btn_Fragment);
         setListeners();
 
     }
@@ -148,8 +149,8 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(MainActivity.this,AActivity.class);
                     startActivity(intent);
                     break;
-                case R.id.btn_LaunchMode:
-                    intent = new Intent(MainActivity.this,oneActivity.class);
+                case R.id.btn_Fragment:
+                    intent = new Intent(MainActivity.this,ContainerActivity.class);
                     startActivity(intent);
                     break;
             }
